@@ -36,6 +36,8 @@ plt.ion()
 fig, ax = plt.subplots(1,1)
 pl, = ax.plot(x, Sigma, 'ro', markersize = 2)
 ax.set_ylim([0,0.35])
+ax.set_xlabel('x = r/R0')
+ax.set_ylabel(r'$\Sigma$')
 fig.canvas.draw()
 
 for ct in range(Nsteps):
